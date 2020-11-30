@@ -1,0 +1,38 @@
+:root {
+    --color-background: #191970;
+    --color-text: #F5F5F5;
+    --color-button: #4169E1;
+    --color-hover: #6495ED;
+    --color-button-text: #1C1C1C;
+    --color-title: 	#FFFAF0;
+
+    font-size: 65%;
+}
+
+html,
+body{
+    height: 100vh;
+}
+
+body{
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text);
+}
+
+#container{
+    width: 100vw;
+}
+
+*{
+    outline: none;
+}

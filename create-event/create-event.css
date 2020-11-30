@@ -1,0 +1,150 @@
+#create-event #container{
+
+    width: 100%;
+    max-width: 1200px;
+
+    height: 100vh;
+}
+
+#create-event .page-header .top-bar-container{
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.6rem 0;
+}
+
+#create-event .page-header .top-bar-container .logo{
+    height: 100px;
+    width: 200px;
+}
+
+#create-event .page-header .top-bar-container img{
+    width: 50px;
+    margin-right: 16px;
+}
+
+
+#create-event main{
+    width: 100%;
+    max-width: 74rem;
+    border-radius: 0.8rem;
+    margin: -3.2rem auto 3.2rem;
+    padding-top: 6.4rem;
+    align-content: center;
+}
+
+#create-event .header-content{
+    margin-top: 8rem;
+}
+
+#create-event .header-content strong{
+    font-size: 6.8rem;
+}
+
+#create-event .header-content p{
+    font-size: 1.6rem;
+}
+
+#create-event fieldset{
+    padding: 0 2.4rem;
+    border-radius: 0.8rem;
+}
+
+#create-event fieldset legend{
+    font: 700 2.2rem Archivo;
+
+    margin-bottom: 1.4rem;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 2.6rem;
+}
+
+#create-event .input-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    padding-top: 1rem;
+    margin-left: 1.8rem;
+}
+
+#create-event .input-block input{
+    color: #000000;
+    width: 200px;
+    height: 30px;
+}
+
+#create-event .text-area{
+    padding: 1.6rem;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+#create-event .text-area+.text-area{
+    margin-bottom: 3.2rem;
+}
+
+#create-event textarea {
+    color: #000000;
+    width: 200px;
+}
+
+#create-event .input-block select{
+    width: 20.4rem;
+    height: 4rem;
+}
+
+#create-event .select-block{
+    display: flex;
+    align-items: center;
+    margin-left: 1.8rem;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#create-event  select{
+    width: 205px;
+    height: 3.6rem;
+}
+
+#create-event main footer{
+    padding: 4rem 2.4rem;
+    margin-top: 2.8rem;
+    font-size: 1.4rem;
+}
+
+#create-event main footer button{
+    text-decoration: none;
+    width: 200px;
+    margin-left: 280px;
+    transition: background-color 0.2s;
+
+    background: var(--color-button);
+
+    font-size: 1.5rem;
+    padding: 8px;
+
+    cursor: pointer;
+
+    box-shadow: -8px -2px 10px -4px rgba(0,0,0,0.42);
+}
+
+#create-event main footer button:hover{
+    background: var(--color-hover);
+}
+
+#create-event main footer p{
+    margin-left: 170px;
+}

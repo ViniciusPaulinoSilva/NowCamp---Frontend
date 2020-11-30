@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu torneio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="create-event.css">
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../globals/globals.js"></script>
+    <script src="create-event.js"></script>
+
+</head>
+
+<body id="create-event">
+
+    <div id="container">
+        <header class = "page-header">
+            <div class="top-bar-container">
+                <img class="logo" src="../icons/logo.svg" alt="Logo">
+                <a href="../index/index.html">
+                <img src="../icons/voltar.svg" alt="Voltar">
+                </a>
+            </div>
+
+            <div class="header-content">
+            <strong>Crie o seu próprio campeonato</strong>
+            <p>Basta preencher o formulário abaixo e o resto é com a gente</p>
+            </div>
+
+        </header>
+
+        <main>
+            <form action="/create-event" id="form" method="POST">
+                <fieldset>
+                    <legend>Dados necessários</legend>
+
+                    <div class="input-block">
+                        <label for="name">Nome do torneio</label>
+                        <input name="name" type="text" id="name" required>
+                    </div>
+
+                    <div class="select-block">
+                        <label for="category">Categoria</label>
+                        <select name="categories" id="categories">
+                            <option value="" disabled>Selecione uma opção</option>
+                        </select>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="award">Premiação</label>
+                        <input type="number" id="award" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="duration">Inicio da competição</label>
+                        <input name="date" id="date" type="date" required>
+                    </div>
+
+                    <div class="text-area">
+                        <label for="description">Descrição do evento</label>
+                        <textarea name="description" id="desc" required></textarea>
+                    </div>                    
+                    
+                    <div class="text-area">
+                        <label for="rules">Regras da competição</label>
+                        <textarea name="rules" id="rules" required></textarea>
+                    </div>
+                </fieldset>
+            </form>
+
+            <footer>
+                <p>Cobramos uma pequena taxa para hospedar seu torneio</p>
+                <button type="submit" form="create-event" onclick="handleSubmit()">Criar Torneio</button>
+            </footer>
+        </main>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="login.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../globals/globals.js"></script>
+    <script src="login.js"></script>
+    
+</head>
+<body id="login">
+    
+    <div class="container">
+        <header class = "page-header">
+            <div class="top-bar-container">
+                <img class="logo" src="../icons/logo.svg" alt="Logo">
+                <a href="../index/index.html">
+                <img src="../icons/voltar.svg" alt="Voltar">
+                </a>
+            </div>
+
+            <div class="header-content">
+            <strong>Logue para participar das competições</strong>
+            </div>
+
+            <main>
+                <form  id="form" method="POST">
+                    <div class="input-block">
+                        <label for="name">E-mail :</label>
+                        <input name="email" id="email" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="name">Senha :</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                </form>
+            <main>
+
+        <footer>
+            <button type="button" id="send-from" onclick="handleSubmit()">Logar</button>
+        </footer>
+    </div>
+
+</body>
+</html>

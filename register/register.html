@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="register.css">
+
+</head>
+
+<body id=register>
+
+    <div class="container">
+
+        <header class = "page-header">
+            <div class="top-bar-container">
+                <img class="logo" src="../icons/logo.svg" alt="Logo">
+                <a href="../index/index.html">
+                <img src="../icons/voltar.svg" alt="Voltar">
+                </a>
+            </div>
+
+            <div class="header-content">
+            <strong>Faça seu cadastro!</strong>
+            </div>
+
+        </header>
+
+        <main>
+            <form  action="/save-register" id="form" method="POST">
+                <fieldset>
+                    <legend>Seus Dados</legend>
+
+                    <div class="input-block">
+                        <label for="name">Nome completo</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="email">E-mail</label>
+                        <input name="email" id="email" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="password">Sua senha</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <footer>
+                <button type="button" id="send-form">Confirmar Cadastro</button>
+            </footer>
+        </main>
+
+    </div>
+
+</body>

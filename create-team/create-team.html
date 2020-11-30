@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua equipe</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="create-team.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../globals/globals.js"></script>
+    <script src="create-team.js"></script>
+    
+
+
+</head>
+<body id="create-team">
+    
+    <div class="container">
+
+      <header class = "page-header">
+            <div class="top-bar-container">
+                <img class="logo" src="../icons/logo.svg" alt="Logo">
+                <a href="../index/index.html">
+                <img src="../icons/voltar.svg" alt="Voltar">
+                </a>
+            </div>
+
+            <div class="header-content">
+                <strong>Crie uma equipe e convide seus amigos</strong>
+            </div>
+        </header>
+
+        <main>
+             <form  action="/create-team" id="form" method="POST">
+                <fieldset>
+                    <legend>Dados da equipe</legend>
+
+                    <div class="input-block">
+                        <label for="name">Nome da equipe</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                      <div class="select-block">
+                        <label for="category">Categoria</label>
+                        <select name="categories" id="categories">
+                            <option value="" disabled>Selecione uma opção</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </form>
+
+        </main>
+            <footer>
+                <button type="button" id="send-form" onclick="handleSubmit()">Criar Equipe</button>
+            </footer>
+    </div>
+</body>
+</html>

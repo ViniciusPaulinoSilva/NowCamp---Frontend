@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Eventos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="search-events.css">
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../globals/globals.js"></script>
+    <script src="search-event.js"></script>
+
+</head>
+
+<body id="search-event">
+
+    <div class="container">
+
+        <header class = "page-header">
+            <div class="top-bar-container">
+                <img class="logo" src="../icons/logo.svg" alt="Logo">
+                <a href="../index/index.html">
+                <img src="../icons/voltar.svg" alt="Voltar">
+                </a>
+            </div>
+
+            <div class="header-content">
+            <strong>Estes são os torneios disponíveis agora</strong>
+            </div>
+
+        </header>
+ 
+                <form id="form" >
+                    <div class="select-block">
+                        <label for="category">Categorias</label>
+                        <select name="categories" id="categories">
+                            <option value="" disabled>Selecione uma opção</option>
+                        </select>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="reward">Premiação</label>
+                        <input type="input" id="reward" name="reward">
+                    </div>
+
+                    <div class="select-block">
+                        <label for="type">Participação</label>
+                        <select name="participation" id="participation">
+                            <option value="Todos">Todos</option>
+                            <option value="Equipes">Equipes</option>
+                            <option value="Individual">Individual</option>
+                        </select>
+                    </div>
+
+                    <button class="search-button" type="button" onclick="searchEvents()">Pesquisar</button>
+                
+                </form>
+                    <ul style="list-style : none;" id="lista-eventos">
+                    </ul>
+
+    </div>
+</body>
+
+</html>
